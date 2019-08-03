@@ -160,6 +160,48 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  background: #F6F6F6;
+}
+nav .company-name {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+nav .company-name h1 {
+  color: #454A59;
+  font-size: 5rem;
+}
+nav .nav-links {
+  width: 100%;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  nav .nav-links {
+    width: 500px;
+  }
+}
+nav .nav-links a {
+  text-align: center;
+  color: #454A59;
+  text-decoration: none;
+  padding-left: 4rem;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 500px;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;

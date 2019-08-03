@@ -1,1 +1,33 @@
 // Mixins Here
+.display-flex-row (@justify: center) {
+  display: flex;
+  flex-direction: row;
+  justify-content: @justify;
+}
+
+.display-flex-column (@align: center) {
+  display: flex;
+  flex-direction: column;
+  align-content: @align;
+}
+
+.mobile-width(@width: 100%) {
+  @media @mobile {
+    width: @width;
+  }
+}
+
+.btn-style(@width, @color, @font-color, @hover-color, @hover-font-color) {
+  padding: 2rem 0;
+  width: @width;
+  background: @color;
+  color: @font-color;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: .5rem;
+
+  &:hover {
+    background: @hover-color;
+    color: @hover-font-color;
+    }
+}
