@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+`An adaptive website has multiple design layouts for different screen sizes and can sometimes look jumpy when shrinking or expanding the viewport. While a fully responsive website is designed to look good on any screen size and look more fluid and smooth when changing the viewports size. `
+
 2. Describe what it means to be mobile first vs desktop first.
+
+`Mobile first design is when a webpage is first designed to look good on a mobile screen and then min-width media queries are used to slowly expand out to tablet and desktop sized screens. Desktop first is just the opposite where the webpage is first designed for a large monitor and then max-width media queries are used to slowly decrease the layout for smaller screens.`
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+`Setting the root font size to 62.5% is the industry standard way to convert the default font size of 16px to 10px (16 * 62.5 = 10), which then makes the math very simple for using rem units when designing the rest of the webpage. (1rem = 10px, 5rem = 50px, 17rem = 170px…)`
+
 4. How would you describe preprocessing to someone new to CSS?
 
+`Preprocessing is very similar to CSS but uses a few new concepts like variables, nesting, and having the ability to use multiple separate design files. All of which help to make the code easier to read and less redundant since you don’t need to repeat your code as often and overall the code will be shorter.`
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+`My favorite concept in preprocessing is using mixins and parametric mixins which allow me to reuse blocks of CSS easily and is great for making easily modifiable design layouts. The concept that gives me the most trouble is using ‘imports’ to have multiple design files and remembering which code is on which file.`
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
